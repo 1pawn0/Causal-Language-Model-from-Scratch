@@ -1,0 +1,28 @@
+[project]
+name = "causal-language-model-from-scratch"
+version = "0.0.1"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.14"
+dependencies = [
+    "torch",
+    "sentencepiece",
+    "immutabledict",
+    "tqdm",
+]
+
+[dependency-groups]
+dev = [
+    "ruff",
+    "python-dotenv",
+    "pyright",
+    "mypy",
+]
+
+[[tool.uv.index]]
+    name = "pytorch-cpu"
+    url = "https://download.pytorch.org/whl/cpu"
+    explicit = true
+
+[tool.uv.sources]
+torch = { index = "pytorch-cpu" }
