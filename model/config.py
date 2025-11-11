@@ -30,5 +30,5 @@ class ModelConfig:
     use_post_ffw_norm: bool = True
     rope_local_base_freq: int = 10_000
     rope_theta: int = 1_000_000
-    rope_wave_length: dict[str, int] = {"local_sliding": 10_000, "global": 1_000_000}
+    rope_wave_length = {"local_sliding": 10_000, "global": 1_000_000}
     use_qk_norm: bool = True
